@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tailwind & JS Site</title>
+    
+    <!-- 1. Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Optional: Configure Tailwind CDN settings (like enabling dark mode) -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+    <!-- 2. Your custom CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white dark:bg-gray-900 transition-colors duration-300 min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-600 dark:bg-blue-800 text-white p-4 shadow-md">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Andaji App</h1>
+            <button id="theme-toggle" class="bg-white text-blue-600 dark:bg-gray-800 dark:text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                Andaji Light Mode
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="text-center max-w-2xl">
+            <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-4 slide-up">
+                Welcome to your Andaji website
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 slide-up" style="animation-delay: 0.1s;">
+                This project uses separate files for HTML, custom CSS, and vanilla JavaScript, powered by the Tailwind CSS framework.
+            </p>
+            <button id="alert-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition hover:scale-105">
+                Andaji guta daw!
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800 text-center p-4 text-gray-600 dark:text-gray-400">
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+    <!-- 3. Your custom JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
