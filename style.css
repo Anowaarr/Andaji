@@ -9,8 +9,7 @@
     }
 }
 
-/* A custom utility class we used on the heading and paragraph */
 .slide-up {
     animation: slideUp 0.6s ease-out forwards;
-    opacity: 0; /* Starts hidden, animation makes it visible */
+    opacity: 0; 
 }
